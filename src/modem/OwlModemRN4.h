@@ -33,6 +33,7 @@
 #include "OwlModemSocket.h"
 #include "OwlModemGNSS.h"
 #include "OwlModemSSLRN4.h"
+#include "OwlModemMQTTRN4.h"
 
 /*
  * Constants and Parameters
@@ -157,6 +158,9 @@ class OwlModemRN4 {
   
   /** TLS set up */
   OwlModemSSLRN4 ssl;
+
+  /** MQTT set up */
+  OwlModemMQTTRN4 mqtt;
 
   /** TCP/UDP communication over sockets */
   OwlModemSocket socket;
